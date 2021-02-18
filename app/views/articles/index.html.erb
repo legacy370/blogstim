@@ -1,3 +1,15 @@
+<div data-controller="hello">
+  <input data-hello-target="name" type="text">
+
+  <button data-action="click->hello#greet">
+    Greet
+  </button>
+
+  <span data-hello-target="output">
+  </span>
+</div>
+
+
 <h1>Articles</h1>
 <h2>There are <%= Article.public_count %> articles</h2>
 
@@ -10,4 +22,6 @@
 </ul>
 
 <%= link_to "New Article", new_article_path %>
+
+
 
